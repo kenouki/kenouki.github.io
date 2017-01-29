@@ -1,0 +1,197 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+
+/* general css */
+body {
+    font-family: "Poiret One", sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul {
+    background-color: #4d4d4d;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+#nav ul li {
+    display: inline-block;
+    padding: 20px;
+    opacity: 0.85;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    -webkit-transition: background-color .75s ease;
+    -moz-transition: background-color .75s ease;
+    -o-transition: background-color .75s ease;
+    transition: background-color .75s ease;
+}
+
+#nav ul li a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+
+#main {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("../images/suit.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+#main h1 {
+    font-size: 150px;
+    color: #fff;
+    padding-bottom: 80px;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+#main h3 {
+    font-size: 50px;
+    color: #fff;
+    padding-bottom: 80px;
+    -webkit-animation: fadein 3.5s;
+    -moz-animation: fadein 3.5s;
+    -o-animation: fadein 3.5s;
+    animation: fadein 3.5s;
+}
+
+#main p {
+    font-size: 30px;
+    color: #fff;
+    line-height: 150%;
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    -o-animation: fadein 5s;
+    animation: fadein 5s;
+}
+
+#main #aasho a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main #aasho a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main abbr {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#main .description {
+    font-size: 25px;
+    margin: 0;
+    padding-right: 250px;
+    padding-left: 250px;
+}
+
+#main hr {
+    text-align: center;
+    width: 80%;
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    -o-animation: fadein 5s;
+    animation: fadein 5s;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding: 30px 30px;
+    background-color: #fff; 
+    color: #000;
+    opacity: 0.8;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* fade-in */
+/* fade in */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
