@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<!-- meta -->
+<meta charset="utf-8">
+<meta name="Author" content="Philip">
+<meta name="Description" content="netmath website ver 1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- css links -->
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link href="./css/hover-min.css" rel="stylesheet">
+<!-- js links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<title>NetMath</title>
+</head>
+
+<body>
+<div id="header">
+	<div id="head_img">
+		<img src="./images/one_color_reverse/reverse/trademark/standard/full_mark_reverse/horizontal/reverse/pc/full_mark_horz_reverse.png" alt="i_logo" id="i_logo" />
+	</div>
+</div>
+<div id="triangle">
+	<p></p>
+</div>
+<div id="main">
+	<img src="./images/altgeld_hall.jpg">
+	<img src="./images/equations.jpg">
+	<img src="./images/students.jpg">
+</div>
+<div id="title">
+	<h1><span id="net">Net</span><span id="math">Math</span><span id="at_the"> at the </span><span id="UI">University of Illinois</span></h1>
+	<p>A Program of the Department of Mathematics</p>
+	<section id="section10" class="demo">
+		<a href="#nav"><span></span>Scroll</a>
+	</section>
+</div>
+<div id="nav">
+	<ul>
+		<li><a id="home" class="hvr-trim" href="./index.html">Home</a></li>
+		<li><a id="courses" class="hvr-trim" href="./documents/courses.html">Courses</a></li>
+		<li><a id="registration" class="hvr-trim" href="#">Registration</a></li>
+		<li><a id="service" class="hvr-trim" href="#">Student Services</a></li>
+		<li><a id="policy" class="hvr-trim" href="#">Policy</a></li>
+		<li><a id="FAQ" class="hvr-trim" href="#">FAQ</a></li>
+	</ul> 
+</div>
+<div class="content1">
+	<h1>Welcome to NetMath!</h1>
+	<p>NetMath Introduction</p>
+</div>
+<div class="content2">
+	<h1>What is NetMath?</h1>
+	<p>original path: About NetMath - overview</p>
+</div>
+<div class="content2">
+	<h1>Placeholder</h1>
+	<p>placeholder</p>
+</div>
+<div class="content2">
+	<h1>Placeholder</h1>
+	<p>placeholder</p>
+</div>
+<div id="toolbar">
+	<div id="toolbar_left" style="float: left; width: 45%; text-align: right;">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSera7UV7RvUF2j_3edoDvrqIdpvS0grbY5N_O6VEfhXQNXHPg/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+	<div id="toolbar_right" style="float: right; width: 45%; text-align: left;">
+		<h1>Contact NetMath!</h1>
+		<p><b>Email</b>: netmath@illinois.edu</p>
+		<p><b>Office Hours</b>: Monday - Friday: 8:30 am - 12pm &amp; 1pm - 5pm CST</p>
+		<p><b>Main Office Phone</b>: (217) 265-0439</p>
+		<p><b>Phone hours</b>: Monday - Friday, 9am - 12pm &amp; 1pm - 4pm CST</p>
+		<p><b>Advising</b>: (217) 244-6208</p>
+		<p><b>NetMath Financial Questions</b>: (217) 333-2180 or https://paymybill.uillinois.edu/</p>
+		<p>
+			<b>Address</b>:
+			<br>
+			NetMath Program
+			<br>
+			Department of Mathematics
+			<br>
+			University of Illinois at Urbana-Champaign
+			<br>
+			912 S. Fifth Street
+			<br>
+			Champaign, IL 61820
+		</p>
+	</div>
+	<div id="toolbar_bottom" style="clear:both;">
+		<img src="https://cdn.atlas.illinois.edu/images/150-footer.png">
+	</div>
+</div>
+<script>
+    $(function() {
+        var stickyHeaderTop = $('#nav').offset().top;
+
+
+        $(window).scroll(function() {
+
+            if ($(window).scrollTop() > stickyHeaderTop) {
+                $("#nav ").removeClass("unstick ");
+                $("#nav ").addClass("stick ");
+
+            } else {
+                $("#nav ").removeClass("stick ");
+                $("#nav ").addClass("unstick ");
+            }
+
+        });
+    });
+</script>
+<script>
+	$(function(){
+    $('#main img:gt(0)').hide();
+    setInterval(function(){
+      $('#main :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('#main');}, 
+      3000);
+	});
+</script>
+<script>
+	$(function() {
+	$('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	});
+	});
+</script>
+</body>
+</html>
