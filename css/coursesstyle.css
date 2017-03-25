@@ -86,21 +86,27 @@ body {
 	color: #FA6300;
 }
 
-#content p {
-	margin: auto;
-	width: 80%;
-	font-size: 2em;
-	color: #000000;
-}
-
-table {
+#content .content-area {
 	border-collapse: collapse;
 	margin: auto;
 	width: 80%;
 	margin-top: 5em;
-	margin-bottom: 5em;
+	margin-bottom: 10em;
 }
 
+#highschool{
+	margin-bottom: 10em;
+}
+
+#college{
+	margin-bottom: 10em;
+}
+
+#UIUC{
+	margin-bottom: 10em;
+}
+
+/*
 th, td {
 	text-align: center !important;
 	padding: 2em;
@@ -134,7 +140,8 @@ table a {
 
 table a:hover {
 	color: #FA6300;
-}
+}*/
+
 
 #toolbar {
 	color: #ffffff;

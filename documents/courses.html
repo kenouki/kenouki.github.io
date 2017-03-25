@@ -1,19 +1,26 @@
 <!doctype html>
-<html>
+<html ng-app="components">
 <head>
-<!-- meta -->
-<meta charset="utf-8">
-<meta name="Author" content="Philip">
-<meta name="Description" content="netmath website ver 1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- css links -->
-<link rel="stylesheet" type="text/css" href="../css/coursesstyle.css">
-<link href="../css/hover-min.css" rel="stylesheet">
-<!-- js links -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-<title>Courses</title>
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="Author" content="Philip, Ginny">
+	<meta name="Description" content="netmath website ver 1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- css links -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/coursesstyle.css">
+	<link href="../css/hover-min.css" rel="stylesheet">
+	<link href="../css/liststyle.css">
+	
+	<!-- js links -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/components.js"></script>
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<title>Courses</title>
 </head>
 
 <body>
@@ -32,6 +39,59 @@
 		<li><a id="FAQ" class="hvr-trim" href="#">FAQ</a></li>
 	</ul> 
 </div>
+
+<div id="content">
+<div id="About">
+	<section class="topic-area" style="background-color:white; margin-top:1em;">
+		<div class="content-area">
+			<h1>Courses</h1>
+				<tabs style="text-align:left; font-size: 2em; color:blue;">
+					<pane title="high school" id="highschool">
+						<span><a href="courses/220.html"> MATH 220: {{ 'Calculus I' | filter }} </a></span><br>
+						<span><a href="#">MATH 231: {{ 'Calculus II' | filter }}</a></span><br>
+						<span><a href="#">MATH 241: {{ 'Calculus III' | filter  }}</a></span><br>	
+						<span><a href="#">MATH 285: {{ 'Differential Equation' | filter }}</a></span><br>
+						<span><a href="#">MATH 286: {{ 'Differential Equations Plus' | filter }}</a></span><br>
+						<span><a href="#">MATH 415: {{ 'Applied Linear Algebra' | filter  }}</a></span><br>
+						<span><a href="#">MATH 461: {{ 'Introduction to Probability Theory' | filter  }}</a></span><br>
+					</pane>
+					<pane title="college" id="college">
+						<span>MATH 112: {{ 'College Algebra' | filter }}</span><br>
+						<span>MATH 114: {{ 'Trigonometry' | filter  }}</span><br>
+						<span>MATH 115: {{ 'Preparation for Calculus *(Section A)' | filter }}</span><br>
+						<span>MATH 124: {{ 'Finite Mathematics' | filter }}</span><br>
+						<span><a href="courses/220.html"> MATH 220: {{ 'Calculus I' | filter }} </a></span><br>
+						<span>MATH 231: {{ 'Calculus II' | filter }}</span><br>
+						<span>MATH 241: {{ 'Calculus III' | filter  }}</span><br>
+						<span>MATH 285: {{ 'Differential Equation' | filter }}</span><br>
+						<span>MATH 286: {{ 'Differential Equations Plus' | filter }}</span><br>
+						<span>MATH 292: {{ 'Vector Calculus Supplement' | filter  }}</span><br>
+						<span>MATH 299: {{ 'NetMath Certificate Capstone Course' | filter  }}</span><br>
+						<span>MATH 415: {{ 'Applied Linear Algebra' | filter  }}</span><br>
+						<span>MATH 461: {{ 'Introduction to Probability Theory' | filter  }}</span><br>
+					</pane>
+					<pane title="Attention: UIUC Students" id="UIUC">
+						<span style="font-size:1.5em; color: red;"><strong>Please keep in mind that you must consult with your advisor to take this course during academic year.</strong></span><br><br>
+						<span>MATH 112: {{ 'College Algebra' | filter }}</span><br>
+						<span>MATH 114: {{ 'Trigonometry' | filter  }}</span><br>
+						<span>MATH 115: {{ 'Preparation for Calculus *(Section A)' | filter }}</span><br>
+						<span>MATH 124: {{ 'Finite Mathematics' | filter }}</span><br>
+						<span><a href="courses/220.html"> MATH 220: {{ 'Calculus I' | filter }} </a></span><br>
+						<span>MATH 231: {{ 'Calculus II' | filter }}</span><br>
+						<span>MATH 241: {{ 'Calculus III' | filter  }}</span><br>
+						<span>MATH 285: {{ 'Differential Equation' | filter }}</span><br>
+						<span>MATH 286: {{ 'Differential Equations Plus' | filter }}</span><br>
+						<span>MATH 292: {{ 'Vector Calculus Supplement' | filter  }}</span><br>
+						<span>MATH 299: {{ 'NetMath Certificate Capstone Course' | filter  }}</span><br>
+						<span>MATH 415: {{ 'Applied Linear Algebra' | filter  }}</span><br>
+						<span>MATH 461: {{ 'Introduction to Probability Theory' | filter  }}</span><br>
+					</pane>
+				</tabs>
+		</div>
+	</section>
+</div>
+</div>
+<!--
 <div id="content">
 	<h1>Courses List</h1>
 	<p>Courses in this list are offered to high school graduates and beyond, and some of them are offered to high school students as well.</p>
@@ -112,7 +172,10 @@
 			<td>&#10004;</td>
 		</tr>
 	</table>
-</div>
+</div>		-->
+
+
+
 <div id="toolbar">
 	<div id="toolbar_left" style="float: left; width: 45%; text-align: right;">
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSera7UV7RvUF2j_3edoDvrqIdpvS0grbY5N_O6VEfhXQNXHPg/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
