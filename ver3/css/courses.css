@@ -110,8 +110,9 @@ body {
     display: none;
     position: absolute;
     background-color: #092946;
-	margin: auto;
-	min-width: 11.8em;
+    border: 1px solid #cccccc;
+    margin: auto;
+    min-width: 11.8em;
     z-index: 1;
 }
 
