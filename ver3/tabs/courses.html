@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<!-- meta -->
+<meta charset="utf-8">
+<meta name="Author" content="Philip">
+<meta name="Description" content="netmath website ver 1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- css links -->
+<link rel="stylesheet" type="text/css" href="../css/courses.css">
+<link href="../css/hover-min.css" rel="stylesheet">
+<!-- js links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<title>Courses</title>
+</head>
+
+<body>
+<div id="header">
+	<div id="head_img">
+		<img src="../images/logo.png" alt="i_logo" id="i_logo" />
+		<ul>
+			<li><a id="contact" class="hvr-overline-from-center" href="#">Contact</a></li>
+			<li><a id="faq" class="hvr-overline-from-center" href="#">FAQ</a></li>
+		</ul>
+	</div>
+</div>
+<div id="nav">
+	<ul>
+		<li><a id="main-page" class="hvr-trim" href="../index.html">Home</a></li>
+		<li class="dropdown">
+			<a id="courses" class="hvr-trim dropbtn" href="../tabs/courses.html">Courses</a>
+			<div class="dropdown-content">
+    			<a class="hvr-trim" href="#">Link 1</a>
+    			<a class="hvr-trim" href="#">Link 2</a>
+    			<a class="hvr-trim" href="#">Link 3</a>
+  			</div>
+		</li>
+		<li><a id="registration" class="hvr-trim dropdown" href="#">Registration</a></li>
+		<li class="dropdown">
+			<a id="service" class="hvr-trim dropdown" href="#">Student Services</a>
+			<div class="dropdown-content">
+    			<a class="hvr-trim" href="#">Tuition</a>
+    			<a class="hvr-trim" href="#">Testing Procedure</a>
+    			<a class="hvr-trim" href="#">Exam Proctoring</a>
+  			</div>
+		</li>
+		<li><a id="policy" class="hvr-trim dropdown" href="#">Policy</a></li>
+	</ul> 
+</div>
+<div id="container">
+	<h1>We Offer Classes to High School Students, College Students, and Beyond!</h1>
+	<p>Click the tabs below to see which classes are available for you.</p>
+	<div class="bar">
+		<button class="bar_item button tablink red" onclick="openTab(event,'high')">High School</button>
+		<button class="bar_item button tablink" onclick="openTab(event,'college')">College &amp; Beyond</button>
+		<button class="bar_item button tablink" onclick="openTab(event,'special')">Summer Session II Courses</button>
+	</div>
+	<div id="high" class="tab">
+		<ul>
+			<li><a href="220">Math 220: Calculus I</a></li>
+			<li><a href="../tabs/course/231.html">Math 231: Calculus II</a></li>
+			<li><a href="241">Math 241: Calculus III</a></li>
+			<li><a href="285">Math 285: Differential Equations</a></li>
+			<li><a href="286">Math 286: Differential Equations Plus</a></li>
+			<li><a href="415">Math 415: Applied Linear Algebra</a></li>
+			<li><a href="461">Math 461: Introduction to Probability Theory</a></li>
+		</ul>
+	</div>
+	<div id="college" class="tab" style="display:none">
+		<ul>
+			<li><a href="112">Math 112: College Algebra</a></li>
+			<li><a href="114">Math 114: Trigonometry</a></li>
+			<li><a href="115">Math 115 (Section A16): Preparation for Calculus</a></li>
+			<li><a href="124">Math 124: Finite Mathematics</a></li>
+			<li><a href="220">Math 220: Calculus I</a></li>
+			<li><a href="231">Math 231: Calculus II</a></li>
+			<li><a href="241">Math 241: Calculus III</a></li>
+			<li><a href="285">Math 285: Differential Equations</a></li>
+			<li><a href="286">Math 286: Differential Equations Plus</a></li>
+			<li><a href="292">Math 292: Vector Calculus Supplement</a></li>
+			<li><a href="299">Math 299: NetMath Certificate Capstone Course</a></li>
+			<li><a href="415">Math 415: Applied Linear Algebra</a></li>
+			<li><a href="461">Math 461: Introduction to Probability Theory</a></li>
+		</ul> 
+	</div>
+	<div id="special" class="tab" style="display:none">
+		<p><a href="https://netmath.illinois.edu/summerorientation">Summer Orientation (with Video)</a></p>
+		<ul>
+			<li><a href="112">Math 112: College Algebra</a></li>
+			<li><a href="114">Math 114: Trigonometry</a></li>
+			<li><a href="115">Math 115 (Section A16): Preparation for Calculus</a></li>
+			<li><a href="124">Math 124: Finite Mathematics</a></li>
+			<li><a href="220">Math 220: Calculus I</a></li>
+			<li><a href="231">Math 231: Calculus II</a></li>
+			<li><a href="241">Math 241: Calculus III</a></li>
+			<li><a href="285">Math 285: Differential Equations</a></li>
+			<li><a href="286">Math 286: Differential Equations Plus</a></li>
+			<li><a href="292">Math 292: Vector Calculus Supplement</a></li>
+			<li><a href="415">Math 415: Applied Linear Algebra</a></li>
+			<li><a href="417">Math 417: Abstract Algebra</a></li>
+			<li><a href="444">Math 444: Elementary Real Analysis</a></li>
+			<li><a href="461">Math 461: Introduction to Probability Theory</a></li>
+		</ul>
+	</div>
+</div>
+<div id="toolbar" style="clear:both;">
+	<div id="toolbar_left" style="float: left; width: 45%; text-align: right;">
+		<h1>Or Send Us a Question Here!</h1>
+		<form class="form">
+    		<p class="name"> 
+        		<label for="name">Name</label><br />
+        		<input type="text" name="name" id="name" /> 
+			</p> 
+			<p class="email">
+				<label for="email">E-mail</label><br />
+				<input type="text" name="email" id="email" />  
+			</p>
+			<p class="web"> 
+				<label for="question">Questions?</label><br />
+				<textarea name="text"></textarea>  
+			</p> 
+			<p class="submit"> 
+				<input type="submit" value="Send" /> 
+			</p> 
+		</form>
+	</div>
+	<div id="toolbar_right" style="float: right; width: 45%; text-align: left;">
+		<h1>Contact NetMath!</h1>
+		<p><b>Email</b>: netmath@illinois.edu</p>
+		<p><b>Office Hours</b>: Monday - Friday: 8:30 am - 12pm &amp; 1pm - 5pm CST</p>
+		<p><b>Main Office Phone</b>: (217) 265-0439</p>
+		<p><b>Phone hours</b>: Monday - Friday, 9am - 12pm &amp; 1pm - 4pm CST</p>
+		<p><b>Advising</b>: (217) 244-6208</p>
+		<p><b>NetMath Financial Questions</b>: (217) 333-2180 or https://paymybill.uillinois.edu/</p>
+		<p>
+			<b>Address</b>:
+			<br>
+			NetMath Program
+			<br>
+			Department of Mathematics
+			<br>
+			University of Illinois at Urbana-Champaign
+			<br>
+			912 S. Fifth Street
+			<br>
+			Champaign, IL 61820
+		</p>
+	</div>
+	<div id="toolbar_bottom" style="clear:both;">
+		<img src="https://cdn.atlas.illinois.edu/images/150-footer.png">
+	</div>
+</div>
+<script>
+    $(function() {
+        var stickyHeaderTop = $('#nav').offset().top;
+
+
+        $(window).scroll(function() {
+
+            if ($(window).scrollTop() > stickyHeaderTop) {
+                $("#nav ").removeClass("unstick ");
+                $("#nav ").addClass("stick ");
+
+            } else {
+                $("#nav ").removeClass("stick ");
+                $("#nav ").addClass("unstick ");
+            }
+        });
+    });
+</script>
+<script>
+	function openTab(evt, tabName) {
+  		var i, x, tablinks;
+  		x = document.getElementsByClassName("tab");
+  		for (i = 0; i < x.length; i++) {
+      		x[i].style.display = "none";
+  		}
+  		tablinks = document.getElementsByClassName("tablink");
+  		for (i = 0; i < x.length; i++) {
+      		tablinks[i].className = tablinks[i].className.replace(" red", "");
+  		}
+  		document.getElementById(tabName).style.display = "block";
+  		evt.currentTarget.className += " red";
+	}
+</script>
+</body>
+</html>
