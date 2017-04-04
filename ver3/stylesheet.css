@@ -296,13 +296,6 @@ body {
 	padding-top: 1em;
 }
 
-#home_content_right {
-	background-color: #ffffff;
-	border-left: 3px solid #cccccc;
-	padding-left: 1em;
-	z-index: -500;
-}
-
 #home_content_combined {
 	margin: auto;
 	width: 100%;
